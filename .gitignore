@@ -1,0 +1,9 @@
+.build/
+.DS_Store
+SANIVA.app/
+*.xcuserstate
+work/
+E2EFixtures/
+Legacy/
+SANIVA-*.zip
+SANIVA-*.zip.sha256
