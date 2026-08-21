@@ -7,6 +7,6 @@ jobs:
         os: [macos-14, macos-15]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
-      - run: ./test.sh
+      - uses: actions/checkout@v5
+      - run: zsh test.sh
       - run: swift build
