@@ -1,0 +1,12 @@
+name: SANIVA tests
+on: [push, pull_request]
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [macos-14, macos-15]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./test.sh
+      - run: swift build
